@@ -7,7 +7,7 @@ import json
 
 # Load your .env variables
 load_dotenv()
-HF_TOKEN = os.getenv("HF_API_TOKEN")
+HF_TOKEN = os.getenv("YOUR_SECRET_TOKEN")
 
 # Use Hugging Face's pipeline with a hosted model
 pipe = pipeline("text2text-generation", 
