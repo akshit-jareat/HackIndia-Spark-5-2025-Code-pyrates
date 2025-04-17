@@ -50,8 +50,11 @@ pip install -r requirements.txt
 
 4. **Add your Hugging Face API token to `.env`**
 ```
-HUGGINGFACEHUB_API_TOKEN=
+HUGGINGFACEHUB_API_TOKEN=YOUR_SECRET_TOKEN
 ```
+HOW TO ACCESS THIS 
+  1. CREATE .env file in your root directory
+  2. inside .env , add this line of 4th point 
 
 5. **Run the app**
 ```bash
