@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Submission</title>
+</head>
+<body>
+    <h2>Form Submission (Direct to FastAPI)</h2>
+    <form id="myForm">
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Address:</label><br>
+        <input type="text" name="address" required><br><br>
+
+        <label>Phone:</label><br>
+        <input type="text" name="phone" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="response"></p>
+
+    <script>
+        const form = document.getElementById('myForm');
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(form);
+            const data = {};
+            formData.forEach((value, key) => data[key] = value);
+
+            const response = await fetch('http://127.0.0.1:8000/submit-form/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+
+            const result = await response.json();
+            document.getElementById('response').innerText = result.message;
+        });
+    </script>
+</body>
+</html>
