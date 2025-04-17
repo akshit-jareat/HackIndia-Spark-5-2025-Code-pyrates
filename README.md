@@ -50,7 +50,7 @@ pip install -r requirements.txt
 
 4. **Add your Hugging Face API token to `.env`**
 ```
-HUGGINGFACEHUB_API_TOKEN=your_token_here
+HUGGINGFACEHUB_API_TOKEN=
 ```
 
 5. **Run the app**
