@@ -34,7 +34,7 @@ form_filler_backend/
 1. **Clone the repository**
 ```bash
 git clone https://github.com/akshit-jareat/HackIndia-Spark-5-2025-Code-pyrates.git
-cd HackIndia-Spark-5-2025-Code-pyrates.git
+cd HackIndia-Spark-5-2025-Code-pyrates
 ```
 
 2. **Create and activate virtual environment (optional but recommended)**
