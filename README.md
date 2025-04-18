@@ -33,7 +33,7 @@ form_filler_backend/
 ## Setup Instructions
 1. **Clone the repository**
 ```bash
-git clone https://github.com/akshit-jareat/HackIndia-Spark-5-2025-Code-pyrates.git
+git clone https://github.com/akshit-jareat/HackIndia-Spark-5-2025-Code-pyrates
 cd HackIndia-Spark-5-2025-Code-pyrates
 ```
 
